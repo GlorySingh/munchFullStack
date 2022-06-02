@@ -1,0 +1,225 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Munch - Order, takeaway &amp; free food delivery
+  link(rel='shortcut icon' href='static/assets/munch logo.svg' type='image/x-icon')
+  link(rel='stylesheet' href='static/style.css')
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Inter&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous' referrerpolicy='no-referrer')
+.top-message
+  | We&apos;re open and available for takeaway &amp; delivery.
+  a(href='#menu') Order Now
+.nav-bar
+  a.logo(href='/')
+    img(src='static/assets/munch logo.svg' alt='munch-logo')
+  nav
+    a(href='/') Home
+    a(href='#menu') Order
+    a(href='/') Company
+    a(href='/contact' target='_blank') Contact
+    a(href='/menu' target='_blank')
+      button.cart-btn
+        img(src='static/assets/ShoppingCartSimple.svg' alt='food cart')
+section.hero-section
+  .hero-div
+    h1
+      | Delivering delicious &amp; 
+      span.quality quality
+      |  food to
+      |       your doorstep.
+    p
+      | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      | Lorem Ipsum has been the industry&apos;s standard dummy text ever since
+      | the 1500.
+    button.place-an-order
+      a(href='/menu' target='_blank') Place an Order
+  img(src='static/assets/hero-img.jpg' alt='man-eating-burger')
+section.how-it-works
+  h1 How it works.
+  .steps-box
+    .steps
+      img.step-img(src='static/assets/step1.jpg' alt='')
+      .step-text
+        h3 Choose your favourite items
+        p
+          | Easily adapt your menu using the webflow CMS and allow customers to
+          | browse your items.
+    .steps
+      img.step-img(src='static/assets/add-to-cart.svg' alt='')
+      .step-text
+        h3 Add to cart
+        p
+          | Easily adapt your menu using the webflow CMS and allow customers to
+          | browse your items.
+    .steps
+      img.step-img(src='static/assets/place-your-order.svg' alt='')
+      .step-text
+        h3 Place your order
+        p
+          | Manage your own logistics and take orders simply through the ecommerce
+          | system.
+section#menu.browse-our-menu
+  .menu-text-top
+    h1 Browse our menu
+    p
+      | Use our menu to place an order online, or phone our store to place a
+      | pickup order. Fast and fresh food.
+  //
+    <div class="menu-buttons">
+    <button class="menu-btn"><a href="#">Burgers</a></button
+    ><button class="menu-btn"><a href="#">Sides</a></button
+    ><button class="menu-btn"><a href="#">Beverages</a></button>
+    </div>
+    <div class="menu">
+    <div class="menu-card">
+    <img class="burger" src="static/assets/burger-dreams.jpg" alt="" />
+    <div class="content">
+    <div>
+    <h4>Burger dreams</h4>
+    <span>$ 9.20</span>
+    <p>
+    Filled with grilled beaf, tomatoes, lettuce and cheese, this burger
+    is best when hunger is over the head.
+    </p>
+    </div>
+    <div class="qty">
+    <input id="qty" type="number" min="1" max="5" value="1" /><button
+    class="add-to-cart"
+    >
+    <a href="#">Add to Cart</a>
+    </button>
+    </div>
+    </div>
+    </div>
+    <div class="menu-card">
+    <img class="burger" src="static/assets/burger-munch.jpg" alt="" />
+    <div class="content">
+    <div>
+    <h4>Burger munch</h4>
+    <span>$ 8.30</span>
+    <p>
+    Our restaurant&apos;s signature burger which will leave you wanting
+    more and more.
+    </p>
+    </div>
+    <div class="qty">
+    <input id="qty" type="number" min="1" max="5" value="1" /><button
+    class="add-to-cart"
+    >
+    <a href="#">Add to Cart</a>
+    </button>
+    </div>
+    </div>
+    </div>
+    <div class="menu-card">
+    <img class="burger" src="static/assets/burger-spicy.jpg" alt="" />
+    <div class="content">
+    <div>
+    <h4>Burger spicy</h4>
+    <span>$ 11.20</span>
+    <p>
+    Filled with kimchi and green chillies; best suited for those looking
+    for a spicy snack.
+    </p>
+    </div>
+    <div class="qty">
+    <input id="qty" type="number" min="1" max="5" value="1" /><button
+    class="add-to-cart"
+    >
+    <a href="#">Add to Cart</a>
+    </button>
+    </div>
+    </div>
+    </div>
+    <div class="menu-card">
+    <img class="burger" src="static/assets/burger-classic.jpg" alt="" />
+    <div class="content">
+    <div>
+    <h4>Burger classic</h4>
+    <span>$ 10.31</span>
+    <p>Classic burger-loved by everyone everywhere every time.</p>
+    </div>
+    <div class="qty">
+    <input id="qty" type="number" min="1" max="5" value="1" /><button
+    class="add-to-cart"
+    >
+    <a href="#">Add to Cart</a>
+    </button>
+    </div>
+    </div>
+    </div>
+    </div>
+  .our-food
+    .our-burgers
+      .our-burgers-img
+        img(src='static/assets/burgers.jpg' alt='burgers-variety')
+      p
+        | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis expedita cum distinctio necessitatibus deleniti molestiae quos voluptates perferendis reiciendis, optio commodi, libero consequatur fugit quis, ea nostrum eum molestias facilis!
+        | Veritatis cupiditate commodi quia atque ducimus reprehenderit cumque doloremque vitae beatae nemo! Ipsa laboriosam tempora laudantium? Ipsam excepturi aut facilis architecto nobis natus, eveniet necessitatibus hic quaerat, quis perspiciatis voluptatem?
+    .our-sides
+      .our-burgers-img
+        img(src='static/assets/sides.jpg' alt='sides-variety')
+      p
+        | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis expedita cum distinctio necessitatibus deleniti molestiae quos voluptates perferendis reiciendis, optio commodi, libero consequatur fugit quis, ea nostrum eum molestias facilis!
+        | Veritatis cupiditate commodi quia atque ducimus reprehenderit cumque doloremque vitae beatae nemo! Ipsa laboriosam tempora laudantium? Ipsam excepturi aut facilis architecto nobis natus, eveniet necessitatibus hic quaerat, quis perspiciatis voluptatem?
+    .our-drinks
+      .our-burgers-img
+        img(src='static/assets/drinks.jpg' alt='drinks-variety')
+      p
+        | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis expedita cum distinctio necessitatibus deleniti molestiae quos voluptates perferendis reiciendis, optio commodi, libero consequatur fugit quis, ea nostrum eum molestias facilis!
+        | Veritatis cupiditate commodi quia atque ducimus reprehenderit cumque doloremque vitae beatae nemo! Ipsa laboriosam tempora laudantium? Ipsam excepturi aut facilis architecto nobis natus, eveniet necessitatibus hic quaerat, quis perspiciatis voluptatem?
+  button.full-menu
+    a(href='/menu' target='_blank') See Full Menu
+section.call-us
+  .call-us-text
+    h2 Call our store and takeaway when it suits you best.
+    p
+      | Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      | Lorem Ipsum has been the industry&apos;s standard dummy text ever since
+      | the 1500.
+    button.call-button
+      a(href='#') Ph. +91 9xxx x2xx x0
+  img(src='static/assets/restaurant.jpg' alt='restaurant')
+section.support
+  img(src='static/assets/burger-restaurant.jpg' alt='')
+  .support-text
+    p
+      span.support-word Support
+      |  good food and local business.
+    button.order-now
+      a(href='/menu' target='_blank') Order now
+footer
+  .footer-box1
+    .logo-div
+      img(src='static/assets/munch logo.svg' alt='munch-logo')
+      p Takeaway &amp; Delivery template for small - medium businesses.
+    .company-div
+      nav.company
+        h4 COMPANY
+        a(href='') Home
+        a(href='') Order
+        a(href='') Contact
+      nav.company
+        h4 COMPANY
+        a(href='') Home
+        a(href='') Order
+        a(href='') Contact
+      nav.company
+        h4 COMPANY
+        a(href='') Home
+  .line
+  .lower-footer
+    span.munch Munch 2022.
+    .social-media
+      .icon-circle
+        a(href='https://www.instagram.com/kawaii_arlert/' target='_blank')
+          i.fab.fa-instagram
+      .icon-circle
+        a(href='https://www.linkedin.com/in/glory-singh-912412192/' target='_blank')
+          i.fab.fa-linkedin
+      .icon-circle
+        a(href='https://github.com/GlorySingh' target='_blank')
+          i.fab.fa-github

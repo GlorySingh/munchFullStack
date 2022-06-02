@@ -1,0 +1,245 @@
+@font-face {
+    font-family: Inter-Bold;
+    src: url("./fonts/Inter-Bold.ttf");
+  }
+  
+  @font-face {
+    font-family: Inter-Regular;
+    src: url("./fonts/Inter-Regular.ttf");
+  }
+  
+  :root {
+    --heading-font: Inter-Bold;
+    --body-font: Inter-Regular;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: var(--body-font);
+    color: rgb(31, 31, 31);
+  }
+  
+  .top-message {
+    text-align: center;
+    background-color: #ff7171;
+    padding: 15px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 12px;
+  }
+  
+  .top-message a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .nav-bar {
+    padding: 20px 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 50px;
+    font-size: 14px;
+  }
+  
+  .nav-bar nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  /* .nav-bar nav a {
+    text-decoration: none;
+    color: #28224b;
+  } */
+
+  .nav-bar nav a, .company a {
+    color: #28224b;
+    text-decoration: none;
+    background-image: linear-gradient(#433785, #28224b);
+    background-size: 0% 0.1em;
+    background-position-y: 100%;
+    background-position-x: 0%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+  }
+
+  .nav-bar nav a:hover,
+  .nav-bar nav a:focus,
+  .nav-bar nav a:active {
+    background-size: 100% 0.1em;
+  }
+
+  .company a:hover,
+  .company a:focus,
+  .company a:active {
+    background-size: 35% 0.1em;
+  }
+  
+  .nav-bar .logo img {
+    width: 50px;
+  }
+  
+  .cart-btn {
+    border: white solid 0;
+    background-color: #ff7171;
+    width: 50px;
+    height: 50px;
+    border-radius: 3px;
+  }
+  
+  .cart-btn img {
+    width: 20px;
+  }
+
+  .cart-btn:hover {
+    background-color: #fd7c7c;
+    cursor: pointer;
+  }
+  
+  .container h1 {
+      text-align: center;
+      font-size: 4rem;
+      color: #ff7171;
+      margin: 20px 0;
+    text-decoration: none;
+    background-image: linear-gradient(#ff7171, #ff7171);
+    background-size: 0% 0.05em;
+    background-position-y: 100%;
+    background-position-x: 50%;
+    background-repeat: no-repeat;
+    transition: background-size 0.2s ease-in-out;
+    }
+    .container h1:hover,
+    .container h1:focus,
+    .container h1:active {
+    background-size: 10% 0.05em;
+    }
+
+  .contact-form {
+      display: flex;
+      flex-direction: column;
+      padding: 0 100px;
+  }
+
+  .contact-form input, .contact-form textarea {
+    margin: 20px;
+    padding: 10px 7px;
+    font-size: 1rem;
+    border: 0 solid pink;
+    border-bottom: 2px solid;
+    border-bottom-color: #ff7171;
+  }
+
+  .submit-btn {
+    width: 100px;
+    margin: auto;
+    padding: 7px 11px;
+    font-size: 1.5rem;
+    border-radius: 7px;
+    background-color: #ff7171;
+    color: white;
+    border: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  .submit-btn:hover {
+    cursor: pointer;
+    background-color: #fd7c7c;
+  }
+
+
+   /* footer */
+
+   footer {
+    background-color: #ff71710a;
+    display: flex;
+    flex-direction: column;
+    padding: 100px;
+    height: 500px;
+  }
+  
+  .logo-div img {
+    width: 50px;
+    margin-bottom: 20px;
+  }
+  
+  .footer-box1 {
+    display: flex;
+    height: 300px;
+    justify-content: space-between;
+  }
+  
+  .logo-div {
+    width: 250px;
+  }
+  
+  .company-div {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .company {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .company h4 {
+    font-size: 12px;
+    letter-spacing: 2px;
+  }
+  
+  .company a {
+    text-decoration: none;
+    font-size: 13px;
+  }
+  
+  .line {
+    background-color: rgba(199, 199, 199, 0.418);
+    height: 0.4px;
+    margin: 50px 0;
+  }
+  
+  .lower-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .munch {
+    font-size: 12px;
+  }
+  
+  .social-media {
+    display: flex;
+    gap: 2rem;
+  }
+  
+  .icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    padding: 12.5px;
+  }
+  
+  .icon-circle:hover {
+    cursor: pointer;
+    border-color: #ff7171;
+  }
+  
+  .fa-instagram,
+  .fa-linkedin,
+  .fa-github {
+    font-size: 1.5rem;
+    color: gray;
+  }
+  
+  .fa-instagram:hover,
+  .fa-linkedin:hover,
+  .fa-github:hover {
+    color: #ff7171;
+  }

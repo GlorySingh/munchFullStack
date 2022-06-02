@@ -1,0 +1,268 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(http-equiv='X-UA-Compatible' content='IE=edge')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  title Munch - Order, takeaway &amp; free food delivery
+  link(rel='shortcut icon' href='static/assets/munch logo.svg' type='image/x-icon')
+  link(rel='stylesheet' href='static/menu-style.css')
+  link(rel='preconnect' href='https://fonts.gstatic.com')
+  link(href='https://fonts.googleapis.com/css2?family=Inter&display=swap' rel='stylesheet')
+  link(rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' integrity='sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==' crossorigin='anonymous' referrerpolicy='no-referrer')
+.top-message
+  | We&apos;re open and available for takeaway &amp; delivery. 
+  a(href='#') Order Now
+.nav-bar
+  a.logo(href='/')
+    img(src='static/assets/munch logo.svg' alt='munch-logo')
+  nav
+    a(href='/') Home
+    a(href='') Order
+    a(href='') Company
+    a(href='/contact' target='_blank') Contact
+    a(href='#cart')
+      button.cart-btn
+        img(src='static/assets/ShoppingCartSimple.svg' alt='food cart')
+.container
+  h1 Explore Our Full Menu
+  .item-cont
+    p Burgers
+    .menu
+      .menu-card
+        img.food-item(src='static/assets/burger-dreams.jpg' alt='')
+        .content
+          div
+            h4 Burger dreams
+            span $ 9.20
+            p
+              | Filled with grilled beaf, tomatoes, lettuce and cheese, this
+              | burger is best when hunger is over the head.
+          .qty
+            input#qty(type='number' value='1' min='1' max='5')
+            button.add-to-cart
+              a(href='#') Add to Cart
+      .menu-card
+        img.food-item(src='static/assets/burger-munch.jpg' alt='')
+        .content
+          div
+            h4 Burger munch
+            span $ 8.30
+            p
+              | Our restaurant&apos;s signature burger which will leave you wanting
+              | more and more.
+          .qty
+            input#qty(type='number' value='1' min='1' max='5')
+            button.add-to-cart
+              a(href='#') Add to Cart
+      .menu-card
+        img.food-item(src='static/assets/burger-spicy.jpg' alt='')
+        .content
+          div
+            h4 Burger spicy
+            span $ 11.20
+            p
+              | Filled with kimchi and green chillies; best suited for those
+              | looking for a spicy snack.
+          .qty
+            input#qty(type='number' value='1' min='1' max='5')
+            button.add-to-cart
+              a(href='#') Add to Cart
+      .menu-card
+        img.food-item(src='static/assets/burger-classic.jpg' alt='')
+        .content
+          div
+            h4 Burger classic
+            span $ 10.31
+            p Classic burger-loved by everyone everywhere every time.
+          .qty
+            input#qty(type='number' value='1' min='1' max='5')
+            button.add-to-cart
+              a(href='#') Add to Cart
+  .item-cont
+    p Sides
+    .menu
+      .menu-card
+        img.food-item(src='static/assets/coleslaw.jpg' alt='')
+        .content
+          div
+            h4 Coleslaw
+            span $ 9.20
+            p
+              | Filled with grilled beaf, tomatoes, lettuce and cheese, this
+              | burger is best when hunger is over the head.
+          .qty
+            input#qty(type='number' value='1' min='1' max='5')
+            button.add-to-cart
+              a(href='#') Add to Cart
+      .menu-card
+        img.food-item(src='static/assets/asparagus.webp' alt='')
+        .content
+          div
+            h4 Asparagus
+            span $ 8.30
+            p
+              | Our restaurant&apos;s signature burger which will leave you wanting
+              | more and more.
+          .qty
+            input#qty(type='number' value='1' min='1' max='5')
+            button.add-to-cart
+              a(href='#') Add to Cart
+      .menu-card
+        img.food-item(src='static/assets/bakedBeans.jpg' alt='')
+        .content
+          div
+            h4 Baked Beans
+            span $ 11.20
+            p
+              | Filled with kimchi and green chillies; best suited for those
+              | looking for a spicy snack.
+          .qty
+            input#qty(type='number' value='1' min='1' max='5')
+            button.add-to-cart
+              a(href='#') Add to Cart
+      .menu-card
+        img.food-item(src='static/assets/dinnerRolls.jpg' alt='')
+        .content
+          div
+            h4 Dinner Rolls
+            span $ 10.31
+            p Classic burger-loved by everyone everywhere every time.
+          .qty
+            input#qty(type='number' value='1' min='1' max='5')
+            button.add-to-cart
+              a(href='#') Add to Cart
+  .item-cont
+    p Drinks
+    .menu
+      .menu-card
+        img.food-item(src='static/assets/cranberry.webp' alt='')
+        .content
+          div
+            h4 Cranberry Juice
+            span $ 9.20
+            p
+              | Filled with grilled beaf, tomatoes, lettuce and cheese, this
+              | burger is best when hunger is over the head.
+          .qty
+            input#qty(type='number' value='1' min='1' max='5')
+            button.add-to-cart
+              a(href='#') Add to Cart
+      .menu-card
+        img.food-item(src='static/assets/coconutWater.jpg' alt='')
+        .content
+          div
+            h4 Coconut Water
+            span $ 8.30
+            p
+              | Our restaurant&apos;s signature burger which will leave you wanting
+              | more and more.
+          .qty
+            input#qty(type='number' value='1' min='1' max='5')
+            button.add-to-cart
+              a(href='#') Add to Cart
+      .menu-card
+        img.food-item(src='static/assets/kombucha.webp' alt='')
+        .content
+          div
+            h4 Kombucha Tea
+            span $ 11.20
+            p
+              | Filled with kimchi and green chillies; best suited for those
+              | looking for a spicy snack.
+          .qty
+            input#qty(type='number' value='1' min='1' max='5')
+            button.add-to-cart
+              a(href='#') Add to Cart
+      .menu-card
+        img.food-item(src='static/assets/redWine.jpg' alt='')
+        .content
+          div
+            h4 Red Wine
+            span $ 10.31
+            p Classic burger-loved by everyone everywhere every time.
+          .qty
+            input#qty(type='number' value='1' min='1' max='5')
+            button.add-to-cart
+              a(href='#') Add to Cart
+// shopping cart
+section#cart.shop-cart
+  h2.cart-heading Shopping Cart
+  .cart-box
+    //
+      <div class="cart-item">
+      <div class="cart-item-img">
+      <img src="static/assets/bakedBeans.jpg" alt="cart-item-img">
+      </div>
+      <div class="cart-item-info">
+      <span class="cart-item-name">burger-dreams</span>
+      <span class="cart-item-price">$ 10.31</span>
+      </div>
+      <div class="cart-qty qty"><input class="qty-input" id="qty" type="number" value="1" min="1" max="5"></div>
+      <div class="remove-btn-div">
+      <button class="remove-btn">Remove</button>
+      </div>
+      </div>
+      <div class="cart-item">
+      <div class="cart-item-img">
+      <img src="static/assets/bakedBeans.jpg" alt="cart-item-img">
+      </div>
+      <div class="cart-item-info">
+      <span class="cart-item-name">burger-dreams</span>
+      <span class="cart-item-price">$ 10.31</span>
+      </div>
+      <div class="cart-qty qty"><input class="qty-input" id="qty" type="number" value="1" min="1" max="5"></div>
+      <div class="remove-btn-div">
+      <button class="remove-btn">Remove</button>
+      </div>
+      </div>
+      <div class="cart-item">
+      <div class="cart-item-img">
+      <img src="static/assets/bakedBeans.jpg" alt="cart-item-img">
+      </div>
+      <div class="cart-item-info">
+      <span class="cart-item-name">burger-dreams</span>
+      <span class="cart-item-price">$ 10.31</span>
+      </div>
+      <div class="cart-qty qty"><input class="qty-input" id="qty" type="number" value="1" min="1" max="5"></div>
+      <div class="remove-btn-div">
+      <button class="remove-btn">Remove</button>
+      </div>
+      </div>
+  .total-div
+    span.total-word Total:
+    span.total-price $ 0
+.pay
+  button#pay-btn Proceed to pay
+footer
+  .footer-box1
+    .logo-div
+      img(src='static/assets/munch logo.svg' alt='munch-logo')
+      p Takeaway &amp; Delivery template for small - medium businesses.
+    .company-div
+      nav.company
+        h4 COMPANY
+        a(href='') Home
+        a(href='') Order
+        a(href='') Contact
+      nav.company
+        h4 COMPANY
+        a(href='') Home
+        a(href='') Order
+        a(href='') Contact
+      nav.company
+        h4 COMPANY
+        a(href='') Home
+  .line
+  .lower-footer
+    span.munch Munch 2022.
+    .social-media
+      .icon-circle
+        a(href='https://www.instagram.com/kawaii_arlert/' target='_blank')
+          i.fab.fa-instagram
+      .icon-circle
+        a(href='https://www.linkedin.com/in/glory-singh-912412192/' target='_blank')
+          i.fab.fa-linkedin
+      .icon-circle
+        a(href='https://github.com/GlorySingh' target='_blank')
+          i.fab.fa-github
+script(src='static/menuJS.js')
